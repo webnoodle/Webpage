@@ -16,9 +16,19 @@ body {
 
 .page-header {
   position: absolute;
+  width: 100%;
+  padding: 20px;
+  padding-top: 28px;
+  box-sizing: border-box;
 }
 
 /*Hamburger*/
+.page-nav .hamburger {
+  background: 0;
+  position: absolute;
+  right: 20px;
+  top: 65px;
+}
 
 .hamburger {
   width: 40px;
@@ -60,6 +70,8 @@ body {
   background: url(../img/main.jpg) no-repeat;
   background-size: cover;
   background-position: 50%;
+
+  padding-top: 150px;
 }
 
 
@@ -67,4 +79,33 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  /*display: none;*/
+  width: 100%;
+  text-align: center;
+}
+
+.page-nav .navigation-menu li {
+
+}
+
+.page-nav .navigation-menu li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.page-header.nav-opened {
+  background: #ffffff;
+}
+
+.page-header.nav-opened .page-nav .hamburger {
+  fill: blue;
+}
+
+.article-title {
+  margin: 0;
+}
+
+.article-sidebar .article-picture img {
+  max-width: 100%;
 }
