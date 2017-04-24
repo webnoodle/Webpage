@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width">
   </head>
   <body>
-    <header class="page-header nav-opened">
+    <header class="page-header">
       <a href="#" title="Go back to homepage">
         <img src="img/logo.png" alt="M logo" class="page-logo">
       </a>
@@ -17,7 +17,7 @@
           <li><a href="#" title="A few words about me">About Me</a></li>
           <li><a href="#" title="Features products">Features</a></li>
           <li><a href="#" title="Ask for prices">Get a Quote</a></li>
-          <li><a href="#" title="Contact for more info">Contact Us</a></li>
+          <li class="contact-us"><a href="#" title="Contact for more info">Contact Us</a></li>
         </ul>
         <button type="button" class="hamburger" title="Open menu"></button>
       </nav>
@@ -26,14 +26,15 @@
       <article class="article">
         <header class="article-header">
           <h2 class="article-title">Front-End Web Development</h2>
-          <p>“Websites should look good from the inside and out.”</p>
+          <p class="article-lead">“Websites should look good from the inside and out.”</p>
           <div>
-            <img src="img/ja.jpg" alt="picture of me">
-            <p>Michael Olszewski</p>
-            <time datetime="22-04-2017">2 hours ago</time>
+            <img src="img/ja.jpg" alt="photo of article author" class="article-author-photo">
+            <p class="article-author-name">Michael Olszewski</p>
+            <time datetime="22-04-2017" class="article-date">14 hours ago</time>
           </div>
         </header>
-        <p>Front-end web development, is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly. The challenge associated with front end development is that the tools and techniques used to create the front end of a website change constantly and so the developer needs to constantly be aware of how the field is developing.</p>
+        <div class="article-container">
+            <p>Front-end web development, is the practice of producing HTML, CSS and JavaScript for a website or Web Application so that a user can see and interact with them directly. The challenge associated with front end development is that the tools and techniques used to create the front end of a website change constantly and so the developer needs to constantly be aware of how the field is developing.</p>
         <aside class="article-sidebar">
           <figure class="article-picture">
             <img src="img/mountain.jpg" alt="Ice cold mountaines and ocean">
@@ -42,7 +43,9 @@
           <p>The objective of designing a site is to ensure that when the users open up the site they see the information in a format that is easy to read and relevant. This is further complicated by the fact that users now use a large variety of devices with varying screen sizes and resolutions thus forcing the designer to take into consideration these aspects when designing the site.</p>
           <p> They need to ensure that their site comes up correctly in different browsers (cross-browser), different operating systems (cross-platform) and different devices (cross-device), which requires careful planning on the side of the developer.</p>
           <p>There are several tools available that can be used to develop the front end of a website, and understanding which tools are best fit for specific tasks marks the difference between developing a hacked site and a well designed, scalable site</p>
+        </div>
         </aside>
+      <div class="article-description">
         <h3>HTML5</h3>
         <p>HyperText Markup Language</p>
         <p>HyperText Markup Language (HTML) is the backbone of any website development process, without which a web page doesn't exist. Hypertext means that text has links, termed hyperlinks, embedded in it. When a user clicks on a word or a phrase that has a hyperlink, it will bring another webpage. A markup language indicates text can be turned into images, tables, links, and other representations. It is the HTML code that provides an overall framework of how the site will look. HTML was developed by Tim Berners-Lee.</p>
@@ -53,6 +56,7 @@
         <h3>JavaScript</h3>
         <p>JavaScript is an event-based imperative programming language (as opposed to HTML's declarative language model) that is used to transform a static HTML page into a dynamic interface. JavaScript code can use the Document Object Model (DOM), provided by the HTML standard, to manipulate a web page in response to events, like user input.</p>
         <p>Using a technique called AJAX, JavaScript code can also actively retrieve content from the web (independent of the original HTML page retrieval), and also react to server-side events as well, adding a truly dynamic nature to the web page experience.</p>
+      </div>
       </article>
     </main>
     <footer>
@@ -65,5 +69,6 @@
       <img src="img/logo.png" alt="M Logo" class="page-logo">
       <p>2017</p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
